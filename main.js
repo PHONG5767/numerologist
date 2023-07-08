@@ -54,7 +54,7 @@ var numerologyModule = (function () {
         var name = formData["Name"];
         calculateAndLogNumerology(birthday);
         saveLocal(birthday, name);
-        initData()
+        initData();
         // console.log('Số chủ đạo là:',calculateNumerology([birthday.getDate()]),calculateNumerologyOfBirthDay(birthday));
         // var link;
         // var num123 = calculateNumerologyOfBirthDay(birthday);
