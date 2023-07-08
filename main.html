@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+  input::placeholder {
+    color: rgb(255, 255, 255);
+  }
+</style>
+<form
+  class="js-numerology-form"
+  style="
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    box-shadow: 5px 6px 12px 14px rgb(255 255 255 / 30%);
+    background: #8400ff66;
+    width: 350px;
+  "
+>
+  <label for="Name" style="color: white">Họ Và Tên</label>
+  <input
+    type="text"
+    name="Name"
+    required
+    placeholder="Ví dụ: Nguyễn Văn A"
+    style="
+      border-radius: 5px;
+      height: 3em;
+      width: 100%;
+      padding: 1em;
+      border: none;
+      margin: 0.5em 0 1em 0;
+      background: rgba(197, 191, 191, 0.5);
+      color: white;
+    "
+  />
+  <br />
+  <label for="Name" style="color: white">Sinh Nhật</label>
+  <input
+    type="date"
+    required
+    name="Birthday"
+    style="
+      color: white;
+      border-radius: 5px;
+      height: 3em;
+      width: 325px;
+      padding: 1em;
+      border: none;
+      margin: 0.5em 0 1em 0;
+      background: rgba(197, 191, 191, 0.5);
+    "
+  />
+  <div style="display: flex; justify-content: center; margin: 10px 0 10px 0">
+    <input
+      type="submit"
+      value="XEM MIỄN PHÍ"
+      style="
+        font-weight: 600;
+        border-radius: 10px;
+        color: white;
+        font-size: 15px;
+        padding: 10px;
+        border: 2px solid rgb(110 77 177);
+        background: #ff0000;
+        width: 100%;
+      "
+    />
+  </div>
+</form>
+
+<script src="main.js"></script>
+<script src="sendForm.js"></script>
+
+</body>
+</html>
+
