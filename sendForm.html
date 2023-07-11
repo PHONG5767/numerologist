@@ -4,20 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="subform.css" />
   </head>
   <body>
-    <div id="body">
-      <div id="container">
+    <div id="bodySubmit">
+      <div id="containerSubmit">
         <div id="commentary">
           <div id="commentary__title"><p>Enter your First Name</p></div>
-          <div id="commentary__name"><p>Your First Name</p></div>
+          <div id="commentary__name">
+            <p>Your Name:</p>
+            <div id="name"></div>
+          </div>
           <div id="commentary__name--name"></div>
-          <form action="">
-            <input id="commentary__name--placehoder" type="text" />
-            <button class="button--primary" id="button">START</button>
-          </form>
         </div>
         <div id="calculate">
           <div class="calculate__row" id="calculate__month">
@@ -39,6 +37,6 @@
         </div>
       </div>
     </div>
-    
+    <script src="sendForm.js"></script>
   </body>
 </html>

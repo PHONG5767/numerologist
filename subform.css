@@ -1,12 +1,10 @@
-body {
-    background-color: black;
-}
-#body {
+
+#bodySubmit {
     display: flex;
     justify-content: center; 
     align-items: center;
 }
-#container {
+#containerSubmit {
     width: 500px;
     height: 500px;
     background-color: white;
@@ -34,4 +32,28 @@ body {
     margin: 20px;
     text-align: center;
     color: white;
+}
+#commentary__name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.css-form{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    box-shadow: 5px 6px 12px 14px rgb(255 255 255 / 30%);
+    background: #8400ff66;
+    width: 350px;
+}
+.inputForm{
+    border-radius: 5px;
+      height: 3em;
+      width: 100%;
+      padding: 1em;
+      border: none;
+      margin: 0.5em 0 1em 0;
+      background: rgba(197, 191, 191, 0.5);
+      color: white;
 }
