@@ -149,3 +149,29 @@ propels them onto a spiritual path. This is often the beginning of
 their quest to discover…
 </p>`,
 };
+const accordion = {
+  content0: `<p>According to the beliefs of Numerology, the dominant number is like the roof that covers each person's life. Through the dominant number, Numerology deciphers the mysteries of oneself, such as one's life path, prominent characteristics, strengths, limitations, suitable occupations, whether we are heading in the right direction, and how to make adjustments. <br> Can we change our direction? How can we adjust it?... You can discover your dominant number by checking the free numerology on the specialized ...</p>`,
+  content1: `<p>Our birth date chart is likened to a piece of land that the universe has entrusted to each individual as their capital in this life. Based on the numerical value of your birth date, we can create a chart that shows the presence or absence of certain numbers in specific positions.
+<br><br>
+  Through the analysis of this birth date numerology, it can help you visualize in detail your distinctive personality traits, how your life will unfold, the lessons that life has bestowed upon you, and ways for you to overcome them...</p>`,
+  content2: `<p>The characteristic arrow represents the distinctive and prominent traits of an individual on the birth date chart. The characteristic arrow consists of three numbers aligned horizontally, vertically, or diagonally. Each characteristic arrow will have its own unique characteristics...</p>`,
+  content3: `<p>The four pinnacles of human life, from the perspective of numerology, are similar to the peaks of a combination of four pyramids. Through these pinnacles, you can understand when you will enter different stages of maturity, the nature of the high points in your life, and more. It helps you comprehend your purpose in this world and fulfill it in the best possible way...</p>`,
+  content4: `<p><strong>Mission Number:</strong><br> The mission number is the number derived from each individual's given name. In our lives, each person has a unique given name. According to numerology, a name holds not only the identification of an individual but also contains many distinct meanings.<br>
+  <strong>Personality Number:</strong>    The personality number reflects how others perceive you through your reactions, choices, thoughts, words, and actions.<br>
+  <strong>Soul Number:</strong>    The soul number is a number that represents deep desires within a person. It reveals what truly satisfies and fulfills you.<br>
+  <strong>Attitude Number:</strong>    This number represents the attitude and instinctive (immediate) response to a situation, especially in initial encounters...</p>`,
+  content5: `<p>Career orientation according to numerology is like a compass guiding each person's future. By exploring numerology online, you can discover your strengths and weaknesses, which can help you choose a career that aligns with your true self...</p>`,
+};
+const getlink = {
+  numlink1:'https://numerologist.com/numerology/life-path-number-1/',
+  numlink2:'https://numerologist.com/numerology/life-path-2/',
+  numlink3:'https://numerologist.com/numerology/life-path-3/',
+  numlink4:'https://numerologist.com/numerology/life-path-4/',
+  numlink5:'https://numerologist.com/numerology/life-path-5-personality/',
+  numlink6:'https://numerologist.com/numerology/life-path-6/',
+  numlink7:'https://numerologist.com/numerology/life-path-7/',
+  numlink8:'https://numerologist.com/numerology/life-path-8/',
+  numlink9:'https://numerologist.com/numerology/life-path-9/',
+  numlink11:'https://numerologist.com/numerology/life-path-11/',
+  numlink22:'https://numerologist.com/numerology/life-path-22/',
+}

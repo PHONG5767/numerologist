@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="hompage.css" />
     <link rel="stylesheet" href="section2-homepage.css" />
+    <link rel="stylesheet" href="section-form.css" />
   </head>
   <body>
     <div id="header-bar">
@@ -31,6 +32,7 @@
         </div>
       </div>
     </div>
+
     <div id="section1" class="section">
       <div id="content__main">
         <div id="content__main--title">
@@ -68,7 +70,9 @@
                 NEW TO <br />
                 NUMEROLOGY?
               </p>
-              <button class="btn btn--start-here"><p>GET STARTED »</p></button>
+              <button class="btn btn--start-here">
+                <p>GET STARTED »</p>
+              </button>
             </div>
           </div>
           <div class="Start_here_box_main_colum Start_here_col2">
@@ -80,7 +84,9 @@
                 NEW TO <br />
                 30 DAY CHALLENGE
               </p>
-              <button class="btn btn--start-here"><p>GET STARTED »</p></button>
+              <button class="btn btn--start-here">
+                <p>GET STARTED »</p>
+              </button>
             </div>
           </div>
           <div class="Start_here_box_main_colum Start_here_col3">
@@ -92,7 +98,9 @@
                 NEW TO <br />
                 ANGEL NUMBER MEANINGS
               </p>
-              <button class="btn btn--start-here"><p>GET STARTED »</p></button>
+              <button class="btn btn--start-here">
+                <p>GET STARTED »</p>
+              </button>
             </div>
           </div>
           <div class="Start_here_box_main_colum Start_here_col4">
@@ -104,7 +112,9 @@
                 NEW TO <br />
                 YOUR WEEKLY FORECASTS
               </p>
-              <button class="btn btn--start-here"><p>GET STARTED »</p></button>
+              <button class="btn btn--start-here">
+                <p>GET STARTED »</p>
+              </button>
             </div>
           </div>
         </div>
@@ -144,31 +154,86 @@
           <h2>TO GET YOUR FREE READING, CHOOSE YOUR LIFE PATH NUMBER</h2>
           <a href="">DON’T KNOW YOUR LIFE PATH NUMBER? GET IT HERE »</a>
           <div id="section2__circle--decription"></div>
-          <button class="btn btn--secondary"><p>GET YOUR FULL READING »</p></button>
+          <button id="section2__circle--button" class="btn btn--secondary">
+            <p>GET YOUR FULL READING »</p>
+          </button>
         </div>
-        
       </div>
     </div>
-    <section>asdds</section>
-    <!-- <form class="js-numerology-form css-form">
-      <label for="Name" style="color: white">Họ Và Tên</label>
-      <input
-        class="inputForm"
-        type="text"
-        name="Name"
-        required
-        placeholder="Ví dụ: Nguyễn Văn A"
-      />
-      <br />
-      <label for="Name" style="color: white">Sinh Nhật</label>
-      <input type="date" required name="Birthday" />
-      <div>
-        <input type="submit" value="XEM MIỄN PHÍ" />
+    <div id="section3">
+      <div id="section3__container">
+        <div class="section3__form">
+          <h2>GET YOUR FREE NUMEROLOGY REPORT</h2>
+          <p>
+            To Start your FREE Personalized Numerology Reading,<br />
+            Complete the Information below.
+          </p>
+          <div id="form">
+            <form class="js-numerology-form css-form">
+              <label for="Name">YOUR FIRST NAME</label>
+              <input
+                class="inputForm input__form"
+                type="text"
+                name="Name"
+                required
+                placeholder="Name"
+              />
+              <br />
+              <label for="Name">DATE OF BIRTH</label>
+              <input
+                id="date"
+                placeholder="Type Date"
+                class="input__form"
+                type="date"
+                required
+                name="Birthday"
+                onfocus="(this.type = 'date')"
+              />
+              <div>
+                <input
+                  class="btn btn--pd40 btn--form"
+                  type="submit"
+                  value="GET YOUR FREE REPORT"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-    </form> -->
+      <div class="section3__accordion">
+        <h2>INFORMATION PROVIDED BY ONLINE NUMEROLOGY SEARCH</h2>
+        <div id="accordion__content">
+          <button class="accordion__content--title btn btn--bordercircle5">
+            <p>DOMINANT NUMBER</p> <p>>></p>
+          </button>
+          <div class="accordion__content--decription "></div>
+          <button class="accordion__content--title btn btn--bordercircle5">
+            <p>BIRTH DATE CHART</p><p>>></p>
+          </button>
+          <div class="accordion__content--decription "></div>
+          <button class="accordion__content--title btn btn--bordercircle5">
+            <p>CHARACTERISTIC ARROW IN NUMEROLOGY</p><p>>></p>
+          </button>
+          <div class="accordion__content--decription "></div>
+          <button class="accordion__content--title btn btn--bordercircle5">
+            <p>4 PINNACLES OF HUMAN LIFE</p><p>>></p>
+          </button>
+          <div class="accordion__content--decription "></div>
+          <button class="accordion__content--title btn btn--bordercircle5">
+            <p>IMPORTANT NUMEROLOGY INDICATORS</p><p>>></p>
+          </button>
+          <div class="accordion__content--decription "></div>
+          <button class="accordion__content--title btn btn--bordercircle5">
+            <p>CAREER ORIENTATION ACCORDING TO NUMEROLOGY</p><p>>></p>
+          </button>
+          <div class="accordion__content--decription "></div>
+        </div>
+      </div>
+    </div>
+    <div id="section4"></div>
     <script src="main.js"></script>
     <script src="content.js"></script>
     <script src="section2-circle.js"></script>
-
+    <script src="accordion.js"></script>
   </body>
 </html>
