@@ -64,7 +64,7 @@ function appendRanRight(ranRight) {
 
 function randomLeftDivChild() {
   document.querySelectorAll(".containerLeftChild").forEach((element) => {
-    let leftX = Math.floor(Math.random() * 600);
+    let leftX = Math.floor(Math.random() * 300);
     let leftY = Math.floor(Math.random() * 250);
     var randomColor = Math.floor(Math.random() * 16777215).toString(16);
     element.style.color = '#' + randomColor
@@ -76,7 +76,7 @@ function randomLeftDivChild() {
 }
 
 document.querySelectorAll(".containerLeftChild").forEach((element) => {
-  let leftX = Math.floor(Math.random() * 600);
+  let leftX = Math.floor(Math.random() * 300);
   let leftY = Math.floor(Math.random() * 250);
   var randomColor = Math.floor(Math.random() * 16777215).toString(16);
     element.style.color = '#' + randomColor
@@ -92,7 +92,7 @@ setTimeout(() => {
 
 function randomRightDivChild() {
   document.querySelectorAll(".containerRightChild").forEach((element) => {
-    let rightX = Math.floor(Math.random() * 600);
+    let rightX = Math.floor(Math.random() * 300);
     let rightY = Math.floor(Math.random() * 250);
     var randomColor = Math.floor(Math.random() * 16777215).toString(16);
     element.style.color = '#' + randomColor
@@ -104,7 +104,7 @@ function randomRightDivChild() {
 }
 
 document.querySelectorAll(".containerRightChild").forEach((element) => {
-  let rightX = Math.floor(Math.random() * 600);
+  let rightX = Math.floor(Math.random() * 300);
   let rightY = Math.floor(Math.random() * 250);
   var randomColor = Math.floor(Math.random() * 16777215).toString(16);
   element.style.color = '#' + randomColor

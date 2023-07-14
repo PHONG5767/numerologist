@@ -223,6 +223,7 @@ h2 {
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 50px;
 }
 
 #section2-sub__container {
@@ -398,29 +399,35 @@ h2 {
 
 #random__text--left{
     position: absolute;
-    left:200px;
+    left:0px;
     top: 200px;
     width: 500px;
     height: 500px;
     color: white;
+    display:inline-block;
+
 }
 #random__text--right {
     position: absolute;
-    right: 200px;
+    right: 0px;
     width: 500px;
     height: 500px;
     top: 200px;
     color: white;
+    display:inline-block;
 }
 
 .containerLeftChild {
     position: relative;
     visibility: inherit;
     transition: all 10s ease-in-out;
+    display:inline-block;
 }
 
 .containerRightChild {
     position: relative;
     visibility: inherit;
     transition: all 10s ease-in-out;
+    width: 0px;
+    display:inline-block;
 }
