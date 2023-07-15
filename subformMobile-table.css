@@ -116,6 +116,10 @@
         width: 90%;
     }
 
+    #bodySubmit {
+        background-size: cover;
+    }
+
     #containerSubmit__circle--nummain>img {
         width: 300px;
         height: 300px;
@@ -138,6 +142,7 @@
 
     .blue-bullets {
         width: 90%;
+        padding-left: 30px;
     }
 
     .blue-bullets>li {

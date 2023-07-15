@@ -33,27 +33,37 @@ ul {
 #footer>div {
     display: flex;
     justify-content: start;
-    align-items: start;
+    align-items: stretch;
     flex-direction: column;
+
 }
 
-#footer__map--fb > div {
+#footer__map--fb {
+    width: 100%;
+}
+
+#footer__map--fb>div {
     margin-bottom: 20px;
+    justify-content: start !important;
+    width: 100%;
+
 }
 
 @media only screen and (max-width: 900px) {
     #footer {
         flex-wrap: wrap;
+        padding-left: 30px;
+        justify-content: start;
+    }
+
+    #footer>div {
+        margin-right: 50px;
     }
 
     #footer__map {
         width: 100%;
         display: flex;
         justify-content: space-around !important;
-    }
-
-    #footer__map > h3 {
-        margin-left: 20px;
     }
 
 }
