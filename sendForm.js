@@ -22,6 +22,14 @@ function splitInfo() {
 }
 splitInfo();
 
+
+function subformJS() {
+  document.getElementById('subformJS').addEventListener('click', () =>{
+    window.location.href =`resultReport.html`;
+  })
+}
+subformJS()
+
 function randomInfo(splitString) {
   for (let i = 0; i <= splitString.length - 1; i++) {
     let j = Math.floor(Math.random() * (i + 1));
@@ -33,7 +41,6 @@ function randomInfo(splitString) {
     splitString.length / 2,
     splitString.length - 1
   );
-  // console.log("ranLeft", ranLeft, "ranRight", ranRight);
   appendRanLeft(ranLeft);
   appendRanRight(ranRight);
 }
@@ -114,15 +121,6 @@ document.querySelectorAll(".containerRightChild").forEach((element) => {
 setTimeout(() => {
   randomRightDivChild();
 }, 25);
-
-// function randomRightDivChild() {
-//   let RightX = Math.floor(Math.random() * 500);
-//   let RightY = Math.floor(Math.random() * 500);
-
-//   document.getElementById("random__text--right").style.right = RightX + 'px';
-//   document.getElementById("random__text--right").style.top = RightY + 'px';
-// }
-// setTimeout(randomRightDivChild, 3000);
 
 function getName() {
   document.getElementById(

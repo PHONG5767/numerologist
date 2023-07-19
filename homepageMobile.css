@@ -3,6 +3,19 @@
         margin-block-start: 0px;
         margin-block-end: 0px;
     }
+    h2 {
+        font-size: 18px !important;
+        margin: 0px 10px 0px 10px;
+
+    }
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+    #section2__circle--content > a {
+        font-size: 15px;
+        margin: 20px 10px 0px 10px;
+    }
     #section1{
         background-repeat: repeat;
         background-size: contain;
@@ -10,6 +23,23 @@
     }
     .content__main--descrip {
         width: auto;
+    }
+    .accordion__content--title  {
+        padding: 15px;
+        display: flex;
+        justify-content: start;
+        text-align: start;
+    }
+    .textNum { 
+        line-height: 100px;
+    }
+
+    #centerCicle--circle > p {
+        font-size: 20px !important;
+        font-weight: bold;
+    }
+    .btn--pd40 {
+        font-size: 15px !important;
     }
 
     #footer__map--fb > div:nth-child(1) {
@@ -54,13 +84,15 @@
         padding: 10px !important;
         width: 95%;
         align-items: center;
+        top: 0px;
+        height: 100px;
     }
     #logo{
         width: 30%;
     }
     #logo-img {
-        width: 100%;
-        height: 25px;
+        height: 80px;
+        width: auto;
     }
 
     #primary-menu-mobile {
@@ -131,6 +163,10 @@
     .Main_Abundant_Thinkers >span {
         font-size: 30px;
     }
+
+    .Main_Abundant_Thinkers > p {
+        display: none;
+    }
     #content__main {
         width: 100%;
     }
@@ -187,6 +223,9 @@
 
     #section3__container {
         width: 100%;
+        padding: 0;
+        border: 0;
+        padding: 10px;
     }
 
     #section2 {

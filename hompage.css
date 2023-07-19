@@ -1,6 +1,9 @@
 html {
     font-family: sans-serif;
 }
+body {
+    margin: 0px;
+}
 
 .menu-item-text {
     font-size: 25px;
@@ -50,8 +53,8 @@ html {
 }
 
 #logo-img {
-    width: 289px;
-    height: 35px;
+    width: 100px;
+    height: 100px;
 }
 
 #content__main {
