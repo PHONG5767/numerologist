@@ -8,6 +8,7 @@ let nummonth = JSON.parse(localStorage.getItem("numMonth")) || [];
 let numday = JSON.parse(localStorage.getItem("numDay")) || [];
 let numyear = JSON.parse(localStorage.getItem("numYear")) || [];
 let nummain = JSON.parse(localStorage.getItem("numMain")) || [];
+
 function convertToPlainCharacter(character) {
   const conversions = {
     đ: "d",
@@ -327,23 +328,90 @@ function SubconsciousSelfNumber() {
 
   for (let i = 1; i <= 9; i++) {
     let divChild = document.createElement("li");
-    divChild.innerHTML = `<p>Number ${i}  - <i>${checkValue(i)}</i></p>`
-    document.getElementById('YourSelfNumber__Represented').appendChild(divChild)
+    divChild.innerHTML = `<p>Number ${i}  - <i>${checkValue(i)}</i></p>`;
+    document
+      .getElementById("YourSelfNumber__Represented")
+      .appendChild(divChild);
     a.push(checkValue(i));
-    console.log(a);
   }
 
   const countYes = a.reduce(
     (count, value) => count + (value === "Yes" ? 1 : 0),
     0
   );
-    console.log(countYes)
+
   document.getElementById(
     "YourSelfNumber"
   ).innerHTML = `<span>Subconscious Self Number: ${countYes}</span>`;
-  document.getElementById('representedNumbers').innerHTML = `<p style="font-weight:900">You have ${countYes} represented numbers!</p>`
-  document.getElementById('YourSelfNumber__content').innerHTML = YourSelfNumberContent["num" + countYes];
+  document.getElementById(
+    "representedNumbers"
+  ).innerHTML = `<p style="font-weight:900">You have ${countYes} represented numbers!</p>`;
+  document.getElementById("YourSelfNumber__content").innerHTML =
+    YourSelfNumberContent["num" + countYes];
 }
 SubconsciousSelfNumber();
 
-function BalanceNumbers() {}
+function BalanceNumbers() {
+  let words = fullname.split(" ");
+
+  let result = "";
+
+  for (let i = 0; i < words.length; i++) {
+    result += words[i][0];
+  }
+  let arrresult = result.split("");
+
+  const values = {
+    a: 1,
+    b: 2,
+    c: 3,
+    d: 4,
+    e: 5,
+    f: 6,
+    g: 7,
+    h: 8,
+    i: 9,
+    j: 1,
+    k: 2,
+    l: 3,
+    m: 4,
+    n: 5,
+    o: 6,
+    p: 7,
+    q: 8,
+    r: 9,
+    s: 1,
+    t: 2,
+    u: 3,
+    v: 4,
+    w: 5,
+    x: 6,
+    y: 7,
+    z: 8,
+  };
+
+  let sum = arrresult.reduce(
+    (total, character) => total + (values[character] || 0),
+    0
+  );
+  let sumBalance = caculateSum(sum)
+  
+  document.getElementById('Balance-Number').innerHTML = `<span>Balance Number: ${sumBalance}</span>`
+  document.getElementById('Balance-Number-sub').innerHTML = `<p style="font-weight:900">What does an Balance Number of ${sumBalance} mean?</p>`
+  document.getElementById('BalanceNumbers__content').innerHTML = `${BalanceNumberContent['num'+sumBalance]}`
+
+  for (let i = 0; i < arrresult.length; i++) {
+    let divChild = document.createElement("div");
+    divChild.classList.add(arrresult[i]);
+    divChild.classList.add("imgName");
+
+    var imageElement = document.createElement("img");
+
+    imageElement.src = `./img/${arrresult[i]}.png`;
+
+    divChild.appendChild(imageElement);
+
+    document.getElementById("BalanceNumbers__img").appendChild(divChild);
+  }
+}
+BalanceNumbers();
